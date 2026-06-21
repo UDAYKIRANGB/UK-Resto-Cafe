@@ -1,0 +1,191 @@
+.home-container {
+  height: 100vh;
+}
+
+.tabs-container {
+  display: flex;
+  overflow-x: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.tab-item,
+.active-tab {
+  padding: 0px 30px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.active-tab {
+  color: #db1c48;
+  border-bottom: 2px solid #db1c48;
+}
+
+.dishes-container {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.dish-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #d7dfe9;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.dish-type-discription-details {
+  display: flex;
+  align-items: flex-start;
+  width: 45%;
+  margin-right: 12px;
+}
+
+.veg-icon,
+.non-veg-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.veg-icon {
+  border-color: green;
+}
+
+.non-veg-icon {
+  border-color: brown;
+}
+
+.veg-dot,
+.non-veg-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.veg-dot {
+  background-color: green;
+}
+
+.non-veg-dot {
+  background-color: brown;
+}
+
+.dish-name {
+  font-size: 19px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.dish-sar {
+  font-size: 16px;
+  color: rgb(35, 31, 31);
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.dish-discription {
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.add-cart-container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: green;
+  width: 100px;
+  height: 45px;
+  justify-content: space-between;
+  color: #d7dfe9;
+  border: none;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: #d7dfe9;
+  font-size: 38px;
+}
+
+.custom-para {
+  color: blue;
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.not-available {
+  color: red;
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.calories-title {
+  color: goldenrod;
+  font-size: 15px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.dish-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .dish-image {
+    width: 150px;
+    height: 150px;
+  }
+  .dish-name {
+    font-size: 24px;
+  }
+  .dish-sar {
+    font-size: 18px;
+  }
+  .dish-discription {
+    font-size: 16px;
+  }
+  .add-cart-container {
+    width: 140px;
+  }
+  .dish-type-discription-details {
+    width: 60%;
+  }
+  .calories-title {
+    font-size: 20px;
+  }
+  .dish-item {
+    padding: 15px 10px;
+  }
+}

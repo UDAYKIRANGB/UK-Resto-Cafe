@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tabs {
+  display: flex;
+  overflow-x: auto;
+}
+
+.tabs button {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.active-tab {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
+
+.dish-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: green;
+  color: white;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.counter button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.customization {
+  color: blue;
+}
