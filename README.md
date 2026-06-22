@@ -1,43 +1,153 @@
-Develop a restaurant page, ensuring it is user-friendly and visually appealing.
+# UNI RESTO CAFE
 
-#### Mobile Interface
+A responsive restaurant web application built using React.js that enables users to browse menu items, add dishes to the cart, manage quantities, and place orders seamlessly.
 
-<a href="https://res.cloudinary.com/dupvp9gj9/image/upload/v1688464567/Restaurant_page_movie-view_dqv1fl.png" target=_blank_>
-    <div style="text-align: center;">
-        <img src="https://res.cloudinary.com/dupvp9gj9/image/upload/v1688465518/Restaurant_page_movie-view_2_p6r4up.png" alt="restaurant-app" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-    </div>
-</a>
+## 🚀 Features
 
-<br/>
-#### Web Interface
-<a href="https://res.cloudinary.com/dupvp9gj9/image/upload/v1688464566/Restaurant_page_web-view_l7snar.png" target=_blank_ >
-    <div style="text-align: center;">
-        <img src="https://res.cloudinary.com/dupvp9gj9/image/upload/v1688464566/Restaurant_page_web-view_l7snar.png" alt="restaurant-app" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-    </div>
-</a>
+- User Authentication
+- Protected Routes
+- Browse Restaurant Menu
+- Add Dishes to Cart
+- Increase and Decrease Quantity
+- Remove Individual Cart Items
+- Remove All Cart Items
+- Dynamic Cart Count
+- Empty Cart View
+- Responsive Design
 
-#### API:
+## 🛠️ Technologies Used
 
-<a href="https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details" target=_blank_ >https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details</a>
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-#### Instructions:
+### Libraries
+- React Router DOM
+- Context API
+- JS Cookie
 
-- The API returns the dish categories and the dishes in that category.
-- The dish categories should be slidable.
-- If a dish has addons(`addoncat`), then it should display the text **“Customizations available”**.
-- Clicking on the `+` and `-` buttons should update the count accordingly and also on the cart icon on the top bar.
-- Implement maintainable and reusable coding standards.
-- The tabs must not be hardcoded, their length should change as per API.
-- Host the site in Heroku / Netlify/ any hosting.
-- Submit the git URL & site URL in the Submission form.
+### Tools
+- Git
+- GitHub
+- VS Code
 
-#### Submission Form:
+## 📂 Project Structure
 
-<center>Click the below button and submit your git URL and site URL</center>
-<br>
-<a target=_blank_ href="https://forms.gle/NNpW1HBk7aDDaKuw6">
-  <center><button style="color: #fff; border: none; cursor: pointer; width: 218px; height: 34px; background-color: rgb(22, 101, 216); border-radius: 5.4px; box-shadow: rgb(0 0 0 / 36%) 0px 2px 4px 0px;font-family: Inter;font-size: 14px;color: rgb(255, 255, 255);font-weight: 500;letter-spacing: 0.5px;text-transform: uppercase;">
-    SUBMIT
-  </button>
-  </center>
-</a>
+```text
+src
+│
+├── components
+│   ├── Login
+│   ├── Home
+│   ├── Cart
+│   ├── Navbar
+│   └── ProtectedRoute
+│
+├── context
+│   └── CartContext
+│
+├── App.js
+├── index.js
+└── index.css
+```
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/enhancementOfRestaurantApp.git
+```
+
+### Navigate to Project Directory
+
+```bash
+cd enhancementOfRestaurantApp
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Application
+
+```bash
+npm start
+```
+
+The application will start at:
+
+```text
+http://localhost:3000
+```
+
+## 🔑 Login Credentials
+
+```text
+Username: rahul
+Password: rahul@2021
+```
+
+## 📋 Functionality
+
+### Login
+- User authentication using JWT token.
+- Protected routes for authorized users.
+
+### Home Page
+- Displays restaurant menu items.
+- Add dishes to cart.
+- Quantity management using increment and decrement buttons.
+
+### Cart Page
+- Displays all selected dishes.
+- Increase or decrease quantity.
+- Remove individual items.
+- Remove all cart items.
+- Empty cart view when no items are present.
+
+## 🎯 Concepts Practiced
+
+- React Components
+- React Router
+- Context API
+- State Management
+- Conditional Rendering
+- Event Handling
+- Protected Routing
+- Responsive Web Design
+
+## 📸 Screenshots
+
+### Login Page
+<img width="1352" height="712" alt="image" src="https://github.com/user-attachments/assets/7f247be6-8bb5-4b43-b7b8-13f8958a9faf" />
+
+### Home Page
+<img width="1867" height="888" alt="image" src="https://github.com/user-attachments/assets/b8061d14-13be-488c-ac9e-c04ff1d2a0bc" />
+
+### Cart Page
+<img width="1885" height="792" alt="image" src="https://github.com/user-attachments/assets/2f700be1-5509-43b1-83b4-c4df7c13db21" />
+
+### Empty Cart Page
+<img width="1883" height="877" alt="image" src="https://github.com/user-attachments/assets/f9292fba-dc44-46e8-8324-1269e52647fb" />
+
+## 🔗 Live Demo
+
+Add your deployed project URL here:
+
+```text
+https://your-live-demo-link.com
+```
+
+## 👨‍💻 Author
+
+**G B Uday Kiran**
+
+GitHub: https://github.com/UDAYKIRANGB
+
+ 
+
