@@ -30,7 +30,8 @@
 .cart-list-item {
   display: flex;
   align-items: flex-start;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
     0 4px 4px -1px rgba(0, 0, 0, 0.03);
   padding: 10px;
   justify-content: space-between;
@@ -88,12 +89,11 @@
 }
 
 .remove-item-btn {
-  background-color: blue;
-  width: 80px;
-  height: 35px;
-  color: white;
+  background-color: transparent;
+  color: red;
   border: none;
-  border-radius: 10px;
+  font-size: 20px;
+  align-self: center;
 }
 
 .empty-cart-container {
