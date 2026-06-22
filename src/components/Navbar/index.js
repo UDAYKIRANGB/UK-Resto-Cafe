@@ -26,7 +26,7 @@ const Navbar = props => {
         return (
           <nav className="navbar">
             <Link to="/" className="link">
-              <h1 className="title">UNI Resto Cafe</h1>
+              <h1 className="title">UK Resto Cafe</h1>
             </Link>
 
             <div className="my-orderCart-container">
