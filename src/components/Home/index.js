@@ -7,8 +7,7 @@ import './index.css'
 
 class Home extends Component {
   state = {
-    restaurantName: '',
-    activetabId: '',
+    activeTabId: '',
     restaurantData: [],
   }
 
@@ -22,8 +21,6 @@ class Home extends Component {
 
     const response = await fetch(apiUrl)
     const data = await response.json()
-
-    console.log(data)
 
     const updatedData = data[0].table_menu_list.map(eachCategory => ({
       menuCategory: eachCategory.menu_category,
@@ -46,7 +43,6 @@ class Home extends Component {
     }))
 
     this.setState({
-      restaurantName: data[0].restaurant_name,
       restaurantData: updatedData,
       activeTabId: updatedData[0].menuCategoryId,
     })
@@ -57,7 +53,7 @@ class Home extends Component {
   }
 
   render() {
-    const {restaurantData, activeTabId, restaurantName} = this.state
+    const {restaurantData, activeTabId} = this.state
 
     const activeCategory = restaurantData.find(
       each => each.menuCategoryId === activeTabId,
@@ -65,7 +61,7 @@ class Home extends Component {
 
     return (
       <>
-        <Navbar restaurantName={restaurantName} />
+        <Navbar />
         <div className="home-container">
           <ul className="tabs-container">
             {restaurantData.map(each => (
@@ -78,6 +74,7 @@ class Home extends Component {
                 }
               >
                 <button
+                  type="button"
                   onClick={() => this.changeTab(each.menuCategoryId)}
                   className="menu-btn"
                 >
@@ -126,8 +123,7 @@ class Home extends Component {
                             each => each.dishId === eachDish.dishId,
                           )
 
-                          const quantity =
-                            cartItem.length > 0 ? cartItem.quantity : 0
+                          const quantity = cartItem ? cartItem.quantity : 0
 
                           return (
                             <div className="add-cart-container">

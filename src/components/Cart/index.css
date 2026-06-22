@@ -1,0 +1,132 @@
+.cart-list-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  min-height: 90vh;
+}
+
+.cart-heading {
+  font-size: 30px;
+  color: black;
+  margin-top: 0px;
+}
+
+.remove-button {
+  border: none;
+  background-color: transparent;
+  color: blue;
+  align-self: flex-end;
+  font-size: 20px;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.cart-list-item {
+  display: flex;
+  align-items: flex-start;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 4px 4px -1px rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-details {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  height: 120px;
+  width: 120px;
+  margin-right: 15px;
+  align-self: flex-start;
+}
+
+.dish-title {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .dish-title {
+    font-size: 24px;
+  }
+}
+
+.dish-price {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.add-cart-list-container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: green;
+  width: 90px;
+  height: 35px;
+  justify-content: space-between;
+  color: #d7dfe9;
+  border: none;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: #d7dfe9;
+  font-size: 22px;
+}
+
+.remove-item-btn {
+  background-color: blue;
+  width: 80px;
+  height: 35px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.empty-cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+}
+
+.empty-image {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 0px;
+}
+
+.cart-empty-heading {
+  font-size: 28px;
+  margin-top: 0px;
+}
+
+.cart-empty-para {
+  margin-top: 0px;
+}
+
+.order-now-btn {
+  background-color: orange;
+  width: 100px;
+  height: 35px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}

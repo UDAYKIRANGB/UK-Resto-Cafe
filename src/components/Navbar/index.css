@@ -6,10 +6,38 @@
   width: 100%;
   margin-top: -8px;
   padding-bottom: 0px;
+  min-height: 10vh;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.logout-icon {
+  display: block;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .logout-icon {
+    display: none;
+  }
 }
 
 .myorder-title {
@@ -17,6 +45,7 @@
   padding-right: 25px;
   font-weight: 500;
   display: none;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -30,9 +59,11 @@
   align-items: center;
 }
 
-.cart-container {
+.cart-container-btn {
   position: relative;
   display: inline-block;
+  background-color: transparent;
+  border: none;
 }
 
 .cart-count {

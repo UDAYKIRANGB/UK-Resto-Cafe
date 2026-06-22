@@ -1,10 +1,18 @@
+import {Link, withRouter} from 'react-router-dom'
+import Cookies from 'js-cookie'
 import {IoCartOutline} from 'react-icons/io5'
+import {FiLogOut} from 'react-icons/fi'
 
 import CartContext from '../../context/CartContext'
 import './index.css'
 
 const Navbar = props => {
-  const {restaurantName} = props
+  const onClickLogout = () => {
+    const {history} = props
+    Cookies.remove('jwt_token')
+    history.replace('/login')
+  }
+
   return (
     <CartContext.Consumer>
       {value => {
@@ -17,14 +25,25 @@ const Navbar = props => {
 
         return (
           <nav className="navbar">
-            <h1 className="title">{restaurantName}</h1>
+            <Link to="/" className="link">
+              <h1 className="title">UNI Resto Cafe</h1>
+            </Link>
 
             <div className="my-orderCart-container">
-              <p className="myorder-title">My Orders</p>
-              <div className="cart-container">
-                <IoCartOutline size={35} />
-                <p className="cart-count">{cartCount}</p>
-              </div>
+              <button type="button" className="button" onClick={onClickLogout}>
+                <FiLogOut size={30} className="logout-icon" />
+                <p className="myorder-title">LogOut</p>
+              </button>
+              <Link to="/cart" className="link">
+                <button
+                  type="button"
+                  className="cart-container-btn"
+                  data-testid="cart"
+                >
+                  <IoCartOutline size={30} color="black" />
+                  <p className="cart-count">{cartCount}</p>
+                </button>
+              </Link>
             </div>
           </nav>
         )
@@ -33,4 +52,4 @@ const Navbar = props => {
   )
 }
 
-export default Navbar
+export default withRouter(Navbar)

@@ -3,7 +3,10 @@ import {Component} from 'react'
 import {Switch, Route} from 'react-router-dom'
 
 import CartContext from './context/CartContext'
+import ProtectedRoute from './components/ProtectedRoute'
 import Home from './components/Home'
+import Login from './components/Login'
+import Cart from './components/Cart'
 
 import './App.css'
 
@@ -34,7 +37,11 @@ class App extends Component {
     })
   }
 
-  removeCartItem = () => {}
+  removeCartItem = dishId => {
+    this.setState(prevState => ({
+      cartList: prevState.cartList.filter(each => each.dishId !== dishId),
+    }))
+  }
 
   increaseCartQuantity = dishId => {
     this.setState(prevState => ({
@@ -68,7 +75,9 @@ class App extends Component {
     }
   }
 
-  removeAllCartItems = () => {}
+  removeAllCartItems = () => {
+    this.setState({cartList: []})
+  }
 
   render() {
     const {cartList} = this.state
@@ -85,7 +94,9 @@ class App extends Component {
         }}
       >
         <Switch>
-          <Route exath path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
+          <ProtectedRoute exact path="/cart" component={Cart} />
+          <ProtectedRoute exath path="/" component={Home} />
         </Switch>
       </CartContext.Provider>
     )
