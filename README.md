@@ -140,7 +140,7 @@ Password: rahul@2021
 Add your deployed project URL here:
 
 ```text
-https://your-live-demo-link.com
+https:[(https://ukrestocafe.ccbp.tech/login)](https://ukrestocafe.ccbp.tech/login)
 ```
 
 ## 👨‍💻 Author
