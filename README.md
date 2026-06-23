@@ -1,4 +1,4 @@
-# UNI RESTO CAFE
+# UK RESTO CAFE
 
 A responsive restaurant web application built using React.js that enables users to browse menu items, add dishes to the cart, manage quantities, and place orders seamlessly.
 
